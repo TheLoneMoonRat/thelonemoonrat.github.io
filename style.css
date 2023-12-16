@@ -2,3 +2,8 @@
     font-size: large;
     align-content: center;
 }
+
+.houseIcon {
+    max-width: 15%;
+    max-height: 15%;
+}
