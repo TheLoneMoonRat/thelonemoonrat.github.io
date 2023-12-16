@@ -70,7 +70,65 @@ ul {
     color: black;
 }
 .background-video {
+    filter: blur(5px);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+.playable-video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.nathanpic {
+    max-width: 20%;
+    max-height: 20%;
+}
+.textbox {
+    color: rgb(254, 211, 76);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    z-index: 2;
+}
+.box {
+    background-color: black;
+    border: thick double rgb(254, 211, 76);
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.myname {
+    text-align: center;
+    font-weight: 300;
+    font-family: "Barlow Condensed";
+}
+.degree {
+    text-align: center;
+    font-weight: 300;
+    font-family:"Barlow Condensed";
+}
+
+.titlebox {
+    color: rgb(254, 211, 76);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    z-index: 2;
 }
