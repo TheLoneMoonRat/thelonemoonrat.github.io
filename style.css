@@ -13,6 +13,7 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    background-color: black;
 }
 .NavBar{
     margin: 0;
@@ -32,7 +33,7 @@ body {
     transition-property: all;
 }
 .NavBarList {
-    background-color: rgb(179, 186, 149);
+    background-color: rgb(254, 211, 76);
     display: flex;
     height: 8vh;
     padding-top: 0%;
@@ -44,9 +45,10 @@ body {
     padding: 0.5vh;
 }
 .contents {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:"Barlow Condensed";
     display: block;
-    font-size: 200%;
+    font-size: 140%;
+    font-weight: bolder;
 }
 ul {
     margin-block-start: 1em;
@@ -55,3 +57,20 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 } 
+.NavBarItem {
+    align-content: end;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin: 1.5vh 2vh 1.5vh 0.5vh;
+    padding: 1vh 1.5vh;
+    transition: .5s;
+}
+.NavLink {
+    text-decoration: none;
+    color: black;
+}
+.background-video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
