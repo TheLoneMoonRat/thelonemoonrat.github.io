@@ -141,3 +141,27 @@ ul {
     height: 100%;
     overflow: hidden;
 }
+
+@keyframes animate {
+    0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.about Nathan {
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
