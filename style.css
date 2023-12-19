@@ -84,10 +84,6 @@ ul {
     object-fit: cover;
     width: 100%;
 }
-.nathanpic {
-    max-width: 20%;
-    max-height: 20%;
-}
 .textbox {
     color: rgb(254, 211, 76);
     align-items: center;
@@ -142,26 +138,88 @@ ul {
     overflow: hidden;
 }
 
-@keyframes animate {
+.aboutnathan {
+    padding: 10%;
+    background-color: black;
+}
+/* @keyframes movement {
     0% {
-        background-color: blue;
-    }
-    25% {
-        background-color: red;
-    }
-    50% {
-        background-color: yellow;
-    }
-    75% {
-        background-color: green;
+        transform: translateY(0) translateX(0) rotate(45deg);
     }
     100% {
-        background-color: white;
+        transform: translateY(100%) translateX(100%) rotate(45deg);
+    }
+} */
+.Nathan {
+    position: relative;
+    background-color:black;
+    border-radius: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    outline-width: 5px;
+    outline-color: rgb(254, 211, 76);
+    outline-style: double;
+    z-index: 3;
+}
+/* .warrior {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    position:relative;
+    height:10%;
+    width: 10%;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    z-index:2;
+} */
+.conveyor-belt {
+    flex-wrap: nowrap;
+    position: relative;
+    z-index:0;
+    top: 10%;
+    left: 10%;
+    transform: translate(-30%, 120%) rotate(40deg);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.conveyor-beltB {
+    position: relative;
+    flex-wrap: nowrap;
+    z-index:0;
+    left: 50%;
+    transform: translate(-45%, 20%) rotate(40deg);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.symbol {
+    animation: conveyorAnimation 4s linear infinite;
+    height: 10%;
+    width: 10%;
+    transform: rotate(-40deg);
+}
+
+.symbolsB {
+    animation: conveyorAnimationB 4s linear infinite;
+    height: 10%;
+    width: 10%;
+    transform: rotate(-40deg);
+}
+
+@keyframes conveyorAnimation {
+    0% {
+        transform: translateX(0%) rotate(-40deg);
+    }
+    100% {
+        transform: translateX(25%) rotate(-40deg);
     }
 }
 
-.about Nathan {
-    animation-name: animate;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+@keyframes conveyorAnimationB {
+    0% {
+        transform: translateX(25%) rotate(-40deg);
+    }
+    100% {
+        transform: translateX(0%) rotate(-40deg);
+    }
 }
